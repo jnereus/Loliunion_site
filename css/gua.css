@@ -1,0 +1,28 @@
+@keyframes guashi
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-moz-keyframes guashi /* Firefox */
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-webkit-keyframes guashui /* Safari 和 Chrome */
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+@-o-keyframes guashi /* Opera */
+{
+from {background: red;}
+to {background: yellow;}
+}
+
+div.hangit{
+   transform:
+
+}

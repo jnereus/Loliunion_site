@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>loliunion Go!Go!Go!</title>
+      <link rel="stylesheet" href="css/stylesheets/style.css">
+      <script src="js/jquery-1.7.2.min.js"></script>
+    <style type="text/css">
+        .note {
+            padding: 18px 20px;
+            background:#eee;
+            text-decoration:none;
+            background:#ffc;
+            display:block;
+            padding: 20px;
+            margin:40px;
+            width: 230px;        
+            box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+            -webkit-transform: rotate(-6deg);
+               -moz-transform: rotate(-6deg);
+                -ms-transform: rotate(-6deg);
+                    transform: rotate(-6deg);
+            font-size: 18px;
+            float: left;
+            background-image:url(picture/pushpin2_left_azure.jpg);
+            background-position:50% 0%;
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+          }
+          .tipsboard{
+             padding:20%;
+             padding-top:0;
+              margin:0px;
+             position: center;
+             float:left;
+             width: 100%;
+
+           }
+         
+          .navbar.navbar-inverse.navbar-fixed-top{
+          background-color:rgba(255,255,255,0.5);
+          border-radius:10px;
+          -moz-border-radius:10px;
+          moz-border-image: url(picture/3.jpg) 0 14 0 14 stretch; /* 老版本的 Firefox */
+          -webkit-border-image: url(picture/3.jpg) 0 14 0 14 stretch; /* Safari */
+          -o-border-image: url(picture/3.jpg) 0 14 0 14 stretch; /* Opera */
+          border-image: url(picture/3.jpg) 0 14 0 14 stretch;
+            
+         
+          }
+          div.jumbotron.masthead{
+          background-image:url(picture/board-1.jpg);
+          background-repeat:no-repeat;
+          width:100%;
+          height:100%;
+          background-size:cover;
+          background-position:50% 30%;
+           border-radius:10px;
+          -moz-border-radius:10px;
+          }
+          .navbar.navbar-inverse.navbar-fixed-top a{
+          font-family: "Microsoft YaHei",微软雅黑;
+          color:#66ccff; 
+          }
+          .navbar.navbar-inverse.navbar-fixed-top a:hover{
+          font-family: "Microsoft YaHei",微软雅黑;
+          color:#fcc5d8; 
+          }
+    </style>
+      
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/site.min.css" rel="stylesheet">
+    <link href="picture/icon.jpg" rel="shortcut icon">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+    <![endif]-->
+  </head>
+  <body>
+  <div class="navbar navbar-inverse navbar-fixed-top" >
+      <div class="container" >
+        <div class="navbar-header" style="padding:5px;">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-sm" href="index.html"style="font-size:30px; font-weight:900;">萝莉联萌</a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation" style="padding:5px;">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" style="font-size:30px; font-weight:900;">偶尔文青<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://v2.bootcss.com/getting-started.html" target="_blank">起步</a>
+                </li>
+                <li>
+                  <a href="http://v2.bootcss.com/scaffolding.html" target="_blank">脚手架</a>
+                </li>
+                <li>
+                  <a href="http://v2.bootcss.com/base-css.html" target="_blank">基本CSS样式</a>
+                </li>
+                <li>
+                  <a href="http://v2.bootcss.com/components.html" target="_blank">组件</a>
+                </li>
+                <li>
+                  <a href="http://v2.bootcss.com/javascript.html" target="_blank">JavaScript插件</a>
+                </li>
+                <li>
+                  <a href="http://v2.bootcss.com/customize.html" target="_blank">定制</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"style="font-size:30px; font-weight:900;">时常逗比<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://v3.bootcss.com/getting-started/" target="_blank">起步</a>
+                </li>
+                <li>
+                  <a href="http://v3.bootcss.com/css/" target="_blank">CSS</a>
+                </li>
+                <li>
+                  <a href="http://v3.bootcss.com/components/" target="_blank">组件</a>
+                </li>
+                <li>
+                  <a href="http://v3.bootcss.com/javascript/" target="_blank">JavaScript插件</a>
+                </li>
+                <li>
+                  <a href="http://v3.bootcss.com/customize/" target="_blank">定制</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="http://www.wooyun.org/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'less'])"style="font-size:30px; font-weight:900;">能搞技术</a></li>
+            <li><a href="http://www.pixiv.net/" target="_blank" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'jquery'])"style="font-size:30px; font-weight:900;">萝莉だいすき</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right hidden-sm">
+            <li><a href="http://user.qzone.qq.com/281804140/infocenter?ptsig=V3NuXtB5ZfQ4HSUe5gcRXXWJSdfMxX-dbYls-gjdaUA_" onclick="_hmt.push(['_trackEvent', 'navbar', 'click', 'about'])" style="font-size:30px; font-weight:900;">快来赞一个</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron masthead" style="position:relative;top:-25px;">
+      <div class="container">
+        <h1 style="position:relative;left:-25%;color:#66ccff;text-shadow: 5px 5px 5px #ffffff;">Loli Union</h1>
+        <h2 style="position:relative;left:-10%;color:#66ccff;text-shadow: 5px 5px 5px #FFffff;">萝莉连萌GO!GO!GO!绅士召集令~</h2>
+        <h2 style="position:relative;left:-10%;color:#66ccff;text-shadow: 5px 5px 5px #FFffff;">Loliconsama的小狗窝</h2>
+      </div>
+    </div>
+    <!-- 推荐幻灯片 -->
+
+      <div id="background" ></div>
+      <div id="player">
+          <div class="cover"></div>
+          <div class="ctrl">
+              <div class="tag">
+                  <strong>Title</strong>
+                  <span class="artist">Artist</span>
+                  <span class="album">Album</span>
+              </div>
+              <div class="control">
+                  <div class="left">
+                      <div class="rewind icon"></div>
+                      <div class="playback icon"></div>
+                      <div class="fastforward icon"></div>
+                  </div>
+                  <div class="volume right">
+                      <div class="mute icon left"></div>
+                      <div class="slider left">
+                          <div class="pace"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="progress">
+                  <div class="slider">
+                      <div class="loaded"></div>
+                      <div class="pace"></div>
+                  </div>
+                  <div class="timer">0:00</div>
+                  <div class="right">
+                      <div class="repeat icon"></div>
+                      <div class="shuffle icon"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <ul id="playlist"></ul>
+
+  <script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+  <script src="js/script.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+  </body>
+</html>
